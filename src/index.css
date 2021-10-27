@@ -27,11 +27,14 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  position: fixed;
+  height: 80vh;
 }
 .comingSoon > h1 {
   font-family: fantasy;
   font-size: 60px;
   color: #52392f;
+}
+
+.comingSoon > img {
+  width: 40vw;
 }
