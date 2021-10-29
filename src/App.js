@@ -6,9 +6,9 @@ import Landing from "./pages/Landing";
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      {/* <Landing /> */}
-      <ComingSoon />
+      <Header />
+      <Landing />
+      {/* <ComingSoon /> */}
     </div>
   );
 }

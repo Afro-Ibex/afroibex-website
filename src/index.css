@@ -16,6 +16,7 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100vw;
 }
 
 code {
@@ -37,4 +38,16 @@ code {
 
 .comingSoon > img {
   width: 40vw;
+}
+
+@media (max-width: 800px) {
+  .comingSoon {
+    flex-direction: column;
+  }
+
+  .comingSoon > h1 {
+    font-family: fantasy;
+    font-size: 30px;
+    color: #52392f;
+  }
 }
