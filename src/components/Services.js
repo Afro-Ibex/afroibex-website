@@ -1,21 +1,19 @@
 import React from "react";
 import "./services.css";
-import image from "./Rectangle_8.png";
+import { images } from "../export";
 
 function Services() {
   const services = [
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Software Development", icon: "..." },
-    { name: "Mobile Application", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Software Development", icon: "..." },
-    { name: "Mobile Application", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
-    { name: "Wesbite Development", icon: "..." },
+    { name: "Wesbite Development", icon: images.webService },
+    { name: "Mobile Application", icon: images.mobileService },
+    { name: "Software Development", icon: images.softwareService },
+    { name: "Networking", icon: images.networkingService },
+    { name: "Computer and Network Security", icon: images.securityService },
+    { name: "Graphics Design", icon: images.graphicsService },
+    { name: "Logo Design", icon: images.logoService },
+    { name: "Maintenance", icon: images.maintenanceService },
+    { name: "Data Analysis", icon: images.analysisService },
+    { name: "Video Production", icon: images.videoService },
   ];
 
   return (
@@ -35,7 +33,7 @@ function Services() {
       <div className="services__list">
         {services.map((service) => (
           <div className="service">
-            <img id="service__image" src={image} />
+            <img id="service__image" src={service.icon} />
             <div id="Website_Development">{service.name}</div>
           </div>
         ))}
