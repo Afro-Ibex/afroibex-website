@@ -10,19 +10,20 @@
 }
 
 .hero__text > h2 {
-  width: 402px;
+  /* width: 402px; */
   white-space: nowrap;
   text-align: left;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2.6rem;
   color: rgba(112, 112, 112, 1);
 }
+
 .hero__text > h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 71px;
+  font-size: 4rem;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -36,4 +37,44 @@
 
 .hero__image > img {
   width: 50vw;
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    background: linear-gradient(#fff, #e66465);
+  }
+  .hero__image {
+    display: none;
+  }
+
+  .hero__text > h2 {
+    /* width: 402px; */
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgba(112, 112, 112, 1);
+  }
+
+  .hero__text > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+/* ------------------------------------------- */
+
+.blink {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }

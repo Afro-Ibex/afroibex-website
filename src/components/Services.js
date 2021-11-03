@@ -33,7 +33,7 @@ function Services() {
       <div className="services__list">
         {services.map((service) => (
           <div className="service">
-            <img id="service__image" src={service.icon} />
+            <img id="service__image" src={service.icon} alt="==========" />
             <div id="Website_Development">{service.name}</div>
           </div>
         ))}

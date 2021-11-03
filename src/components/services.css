@@ -37,18 +37,24 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 10vw;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 .service {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 209px;
-  height: 232px;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  overflow: hidden;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  height: 200px;
+  width: 280px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }

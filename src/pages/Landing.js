@@ -1,8 +1,8 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Partner from "../components/Partner";
 import Services from "../components/Services";
-import Underline from "../components/Underline";
 
 function Landing() {
   return (
@@ -10,9 +10,7 @@ function Landing() {
       <Hero />
       <Partner />
       <Services />
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid incidunt
-      odit laborum repellendus enim deserunt minima sint quibusdam ab. Ipsa
-      quibusdam assumenda sequi illo commodi dolore. Autem expedita vero porro.
+      <Footer />
     </div>
   );
 }
