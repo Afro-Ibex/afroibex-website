@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Button from "./Button";
 import "./hero.css";
-import heroImage from "../assets/images/teamImage.png";
 
 function Hero() {
   const services = ["WEBSITE", "APPLICATION", "GRAPHICS"];
