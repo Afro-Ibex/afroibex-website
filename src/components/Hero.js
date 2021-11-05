@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Button from "./Button";
 import "./hero.css";
-import heroImage from "../assets/images/heroImage.png";
+import heroImage from "../assets/images/teamImage.png";
 
 function Hero() {
   const services = ["WEBSITE", "APPLICATION", "GRAPHICS"];
@@ -82,11 +82,13 @@ function Hero() {
         <h2>
           NEED <span id="serviceName"></span>
         </h2>
-        <Button name="Contact Us" />
+        <div className="hero__button">
+          <Button name="Contact Us" />
+        </div>
       </div>
-      <div className="hero__image">
+      {/* <div className="hero__image">
         <img src={heroImage} alt="team image" />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -6,23 +6,6 @@
   align-items: center; */
 }
 
-.services__title {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
-}
-
-.services__title > div > h3 {
-  color: blue;
-}
-
-.services__title > p {
-  margin: 0 5vw;
-  text-align: center;
-}
-
 #Website_Development {
   /* overflow: visible; */
   /* width: 125px; */

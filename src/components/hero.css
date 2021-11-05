@@ -3,10 +3,20 @@
   justify-content: space-between;
   align-items: center;
   height: 95vh;
+  background: url("../assets/images/teamImage.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__text {
   padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-end; */
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .hero__text > h2 {
@@ -18,21 +28,28 @@
   font-weight: bold;
   font-size: 2.6rem;
   color: rgba(112, 112, 112, 1);
+  color: white;
 }
 
 .hero__text > h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 4rem;
-  color: rgba(0, 0, 0, 1);
+  line-height: 5vh;
+  /* background: white; */
+  /* color: rgba(0, 0, 0, 1); */
+  color: tomato;
+  margin: 10px 0;
 }
 
 .hero__text > h2 > span {
-  color: blue;
+  /* background: white;
+  color: rgba(112, 112, 112, 1); */
+  color: tomato;
 }
 
-.hero__text > button {
-  margin: 5vh 0 0 0;
+.hero__button {
+  margin: 5vh 0;
 }
 
 .hero__image > img {
@@ -41,10 +58,7 @@
 
 @media screen and (max-width: 900px) {
   .hero {
-    background: linear-gradient(#fff, #e66465);
-  }
-  .hero__image {
-    display: none;
+    /* background: linear-gradient(#fff, #e66465); */
   }
 
   .hero__text > h2 {
@@ -54,16 +68,20 @@
     font-family: Segoe UI;
     font-style: normal;
     font-weight: bold;
-    font-size: 2rem;
-    color: rgba(112, 112, 112, 1);
+    font-size: 1.82rem;
   }
 
   .hero__text > h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 3rem;
-    color: rgba(0, 0, 0, 1);
   }
+}
+
+#serviceName {
+  /* background-color: #9b836f; */
+  /* color: white; */
+  /* padding: 2px 10px; */
 }
 
 /* ------------------------------------------- */

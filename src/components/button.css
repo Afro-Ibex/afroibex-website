@@ -4,11 +4,12 @@
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
-  background-color: #9b836f;
+  background-color: tomato;
   border-radius: 5px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }

@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Partner from "../components/Partner";
 import Services from "../components/Services";
+import About from "../components/About";
 
 function Landing() {
   return (
@@ -10,6 +11,7 @@ function Landing() {
       <Hero />
       <Partner />
       <Services />
+      <About />
       <Footer />
     </div>
   );

@@ -18,7 +18,7 @@ function Services() {
 
   return (
     <div className="services">
-      <div className="services__title">
+      <div className="__title">
         <div>
           <h3>Services</h3>
           <h1>What we Offer</h1>

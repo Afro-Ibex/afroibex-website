@@ -8,6 +8,7 @@ import networkingService from "./assets/images/service/networking.png";
 import securityService from "./assets/images/service/security.png";
 import softwareService from "./assets/images/service/software.png";
 import videoService from "./assets/images/service/video.png";
+import teamImage2 from "./assets/images/teamImage2.png";
 
 export const images = {
   webService,
@@ -20,4 +21,5 @@ export const images = {
   securityService,
   softwareService,
   videoService,
+  teamImage2,
 };
