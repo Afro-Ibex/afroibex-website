@@ -8,6 +8,12 @@ function EmailForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const clearFields = () => {
+    setFullname("");
+    setEmail("");
+    setMessage("");
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevents default refresh by the browser
     try {
@@ -23,6 +29,7 @@ function EmailForm() {
         emailKey.USER_ID
       );
       alert("Email Successfully Sent");
+      clearFields();
     } catch (e) {
       alert("An Error Occured While Sending an Email");
       console.log(e.message);
@@ -56,7 +63,7 @@ function EmailForm() {
               type="email"
               name="Email"
               id="email"
-              placeholder="email@domain.tld"
+              placeholder="email@mail.com"
               required
             />
           </div>
@@ -73,7 +80,7 @@ function EmailForm() {
           </div>
           <div class="form-group">
             <button type="submit" class="submit">
-              <i class="far fa-paper-plane"></i>Send
+              <i class="fa fa-paper-plane"></i>Send
             </button>
           </div>
         </form>
