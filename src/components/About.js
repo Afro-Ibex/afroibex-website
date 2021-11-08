@@ -1,7 +1,15 @@
 import React from "react";
 import { images } from "../export";
+import "./about.css";
 
 function About() {
+  const content = `Afro ibex is a company build by an entrepreneur which provide a
+  technology service to our client. As Technology Company we provide
+  website, mobile App, desktop App, networking, graphics design,
+  logo designing, computer and network security, maintenance, data
+  analysis, video production. By producing high-quality work that is
+  affordable and flexible.`;
+
   return (
     <div className="about">
       <div className="__title">
@@ -25,17 +33,7 @@ function About() {
             </span>
           </div>
           <div id="about-desc">
-            <span>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est.
-            </span>
+            <span>{content}</span>
           </div>
         </div>
       </div>
