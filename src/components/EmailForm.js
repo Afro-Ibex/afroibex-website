@@ -4,6 +4,7 @@ import emailJs from "emailjs-com";
 import emailKey from "./emailKey";
 
 function EmailForm() {
+  const [status, setStatus] = useState("Send");
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -18,6 +19,8 @@ function EmailForm() {
     e.preventDefault(); // Prevents default refresh by the browser
     try {
       console.log(message);
+      setStatus("sending ...");
+
       await emailJs.send(
         "service_liqeq1w",
         emailKey.TEMPLATE_ID,
@@ -28,8 +31,13 @@ function EmailForm() {
         },
         emailKey.USER_ID
       );
-      alert("Email Successfully Sent");
-      clearFields();
+
+      setStatus("Sent");
+      setTimeout(() => {
+        // alert("Email Successfully Sent");
+        clearFields();
+        setStatus("Send");
+      }, 1000);
     } catch (e) {
       alert("An Error Occured While Sending an Email");
       console.log(e.message);
@@ -80,7 +88,7 @@ function EmailForm() {
           </div>
           <div class="form-group">
             <button type="submit" class="submit">
-              <i class="fa fa-paper-plane"></i>Send
+              <i class="fa fa-paper-plane"></i> {status}
             </button>
           </div>
         </form>
