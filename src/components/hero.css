@@ -5,6 +5,7 @@
   height: 95vh;
   background: url("../assets/images/teamImage.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
