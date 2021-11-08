@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Partner from "../components/Partner";
 import Services from "../components/Services";
 import About from "../components/About";
+import EmailForm from "../components/EmailForm";
 
 function Landing() {
   return (
@@ -12,6 +13,7 @@ function Landing() {
       <Partner />
       <Services />
       <About />
+      <EmailForm />
       <Footer />
     </div>
   );
