@@ -11,7 +11,7 @@ function About() {
   affordable and flexible.`;
 
   return (
-    <div className="about">
+    <div className="about" id="aboutUs">
       <div className="__title">
         <div>
           <h3>About Us</h3>

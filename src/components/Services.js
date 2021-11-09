@@ -17,7 +17,7 @@ function Services() {
   ];
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="__title">
         <div>
           <h3>Services</h3>
