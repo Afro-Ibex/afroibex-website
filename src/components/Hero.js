@@ -82,7 +82,7 @@ function Hero() {
           NEED <span id="serviceName"></span>
         </h2>
         <div className="hero__button">
-          <Button name="Contact Us" />
+          <Button name="Contact Us" to="#emailForm" />
         </div>
       </div>
       {/* <div className="hero__image">

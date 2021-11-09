@@ -6,6 +6,10 @@
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   font-size: 21px;
 }

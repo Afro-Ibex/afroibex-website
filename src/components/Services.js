@@ -17,17 +17,17 @@ function Services() {
   ];
 
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="__title">
         <div>
           <h3>Services</h3>
           <h1>What we Offer</h1>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
+          {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid
           incidunt odit laborum repellendus enim deserunt minima sint quibusdam
           ab. Ipsa quibusdam assumenda sequi illo commodi dolore. Autem expedita
-          vero porro.
+          vero porro. */}
         </p>
       </div>
       <div className="services__list">

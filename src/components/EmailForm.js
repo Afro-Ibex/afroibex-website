@@ -45,7 +45,7 @@ function EmailForm() {
   };
 
   return (
-    <div className="emailForm">
+    <div className="emailForm" id="emailForm">
       <div class="wrapper">
         <h1>CONTACT US</h1>
         <form action="" method="POST" onSubmit={(e) => handleSubmit(e)}>
